@@ -32,7 +32,6 @@ Certifique-se de ter instalado em sua máquina:
 * **Git**
 
 ### 1. Clone o repositório
-```bash
 git clone [https://github.com/gpontes15/order-system-kafka.git](https://github.com/gpontes15/order-system-kafka.git)
 cd order-system-kafka
 
@@ -59,3 +58,4 @@ sequenceDiagram
     Worker->>DB: Salva pedido (INSERT)
 
     Note over Worker: Log de confirmação
+

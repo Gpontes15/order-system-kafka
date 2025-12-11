@@ -1,0 +1,3 @@
+echo ".vscode/" >> .gitignore
+echo "target/" >> .gitignore
+echo "*.log" >> .gitignore

@@ -21,6 +21,21 @@ Desacoplar o recebimento do pedido do seu processamento.
 
 Isso garante que a API de vendas permaneça sempre disponível (Non-blocking), independente da carga no banco de dados.
 
+## 🚀 Como Executar o Projeto
+
+Siga este passo a passo para rodar a aplicação em seu ambiente local.
+
+### Pré-requisitos
+Certifique-se de ter instalado em sua máquina:
+* **Docker** & **Docker Compose**
+* **Java 17** (ou superior)
+* **Git**
+
+### 1. Clone o repositório
+```bash
+git clone [https://github.com/gpontes15/order-system-kafka.git](https://github.com/gpontes15/order-system-kafka.git)
+cd order-system-kafka
+
 ---
 
 ## 🏗️ Arquitetura
@@ -42,4 +57,5 @@ sequenceDiagram
     Note over Worker: Processamento Assíncrono
     Worker->>Kafka: Consome mensagem
     Worker->>DB: Salva pedido (INSERT)
+
     Note over Worker: Log de confirmação
